@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>ActivityIndicatorIOS 指示器 | react native 学习笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../components/TabBarIOS.html" />
+    
+    
+    <link rel="prev" href="../components/DatePickerIOS.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.3"
+        data-chapter-title="ActivityIndicatorIOS 指示器"
+        data-filepath="components/ActivityIndicatorIOS.md"
+        data-basepath=".."
+        data-revision="Fri Feb 19 2016 10:38:51 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="reference/index.html">
+            
+                
+                    <a href="../reference/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        相关参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="install/index.html">
+            
+                
+                    <a href="../install/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        安装与运行
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="publish/index.html">
+            
+                
+                    <a href="../publish/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        调试与发布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="layout/index.html">
+            
+                
+                    <a href="../layout/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        样式布局
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="layout/base.html">
+            
+                
+                    <a href="../layout/base.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        样式布局基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="layout/image.html">
+            
+                
+                    <a href="../layout/image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        图片 Image 组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="layout/text.html">
+            
+                
+                    <a href="../layout/text.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        文本 Text 组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="components/index.html">
+            
+                
+                    <a href="../components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        组件 Components
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="components/StatusBar.html">
+            
+                
+                    <a href="../components/StatusBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        StatusBar 手机顶部状态栏
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="components/DatePickerIOS.html">
+            
+                
+                    <a href="../components/DatePickerIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        DatePickerIOS 时间日期组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="components/ActivityIndicatorIOS.html">
+            
+                
+                    <a href="../components/ActivityIndicatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        ActivityIndicatorIOS 指示器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="components/TabBarIOS.html">
+            
+                
+                    <a href="../components/TabBarIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        TabBarIOS 页面底部 TabBar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="components/NavigatorIOS.html">
+            
+                
+                    <a href="../components/NavigatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        NavigatorIOS 导航页面组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="components/ScrollView.html">
+            
+                
+                    <a href="../components/ScrollView.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        ScrollView 滚动视图组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >react native 学习笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="activityindicatorios-&#x7EC4;&#x4EF6;--&#x6307;&#x793A;&#x5668;">ActivityIndicatorIOS &#x7EC4;&#x4EF6; - &#x6307;&#x793A;&#x5668;</h1>
+<p>&#x8BE5;&#x7EC4;&#x4EF6;&#x7528;&#x6765;&#x5728; IOS &#x4E2D;&#x663E;&#x793A;&#x52A0;&#x8F7D;&#x6307;&#x793A;&#x5668;&#xFF0C;&#x5373;&#x6211;&#x4EEC;&#x5E38;&#x8BF4;&#x7684; loading</p>
+<h2 id="&#x4F8B;&#x5B50;&#x4EE3;&#x7801;">&#x4F8B;&#x5B50;&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-JavaScript"><span class="hljs-pi">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> React, {
+  Component,
+  ActivityIndicatorIOS,
+  StyleSheet,
+  View,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ToggleAnimatingActivityIndicator</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+
+  constructor(props, context) {
+    <span class="hljs-keyword">super</span>(props, context);
+    <span class="hljs-keyword">this</span>.state = {
+      animating: <span class="hljs-literal">true</span>
+    };
+  }
+
+  setToggleTimeout() {
+    setTimeout(
+      () =&gt; {
+        <span class="hljs-keyword">this</span>.setState({animating: !<span class="hljs-keyword">this</span>.state.animating});
+        <span class="hljs-keyword">this</span>.setToggleTimeout();
+      },
+      <span class="hljs-number">1200</span>
+    );
+  }
+
+  componentDidMount() {
+    <span class="hljs-keyword">this</span>.setToggleTimeout();
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+        <span class="hljs-attribute">animating</span>=<span class="hljs-value">{this.state.animating}</span>
+        <span class="hljs-attribute">style</span>=<span class="hljs-value">{[styles.centering,</span> {<span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>}]}
+        <span class="hljs-attribute">size</span>=<span class="hljs-value">&quot;large&quot;</span>
+      /&gt;</span>
+    )</span>;
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> [
+  {
+    title: <span class="hljs-string">&apos;Default (small, white)&apos;</span>,
+    render () {
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+          <span class="hljs-attribute">style</span>=<span class="hljs-value">{[styles.centering,</span> <span class="hljs-attribute">styles.gray</span>, {<span class="hljs-attribute">height:</span> <span class="hljs-attribute">40</span>}]}
+          <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;white&quot;</span>
+        /&gt;</span>
+      )</span>;
+    }
+  },
+  {
+    title: <span class="hljs-string">&apos;Gray&apos;</span>,
+    render () {
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{[styles.centering,</span> {<span class="hljs-attribute">height:</span> <span class="hljs-attribute">40</span>}]}
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{[styles.centering,</span> {<span class="hljs-attribute">backgroundColor:</span> &apos;#<span class="hljs-attribute">eeeeee</span>&apos;, <span class="hljs-attribute">height:</span> <span class="hljs-attribute">40</span>}]}
+          /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+      )</span>;
+    }
+  },
+  {
+    title: <span class="hljs-string">&apos;Custom colors&apos;</span>,
+    render () {
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.horizontal}</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#0000ff&quot;</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#aa00aa&quot;</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#aa3300&quot;</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span> <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#00aa00&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+      )</span>;
+    }
+  },
+  {
+    title: <span class="hljs-string">&apos;Large&apos;</span>,
+    render () {
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+          <span class="hljs-attribute">style</span>=<span class="hljs-value">{[styles.centering,</span> <span class="hljs-attribute">styles.gray</span>, {<span class="hljs-attribute">height:</span> <span class="hljs-attribute">80</span>}]}
+          <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;white&quot;</span>
+          <span class="hljs-attribute">size</span>=<span class="hljs-value">&quot;large&quot;</span>
+        /&gt;</span>
+      )</span>;
+    }
+  },
+  {
+    title: <span class="hljs-string">&apos;Large, custom colors&apos;</span>,
+    render () {
+      <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.horizontal}</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+            <span class="hljs-attribute">size</span>=<span class="hljs-value">&quot;large&quot;</span>
+            <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#0000ff&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+            <span class="hljs-attribute">size</span>=<span class="hljs-value">&quot;large&quot;</span>
+            <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#aa00aa&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+            <span class="hljs-attribute">size</span>=<span class="hljs-value">&quot;large&quot;</span>
+            <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#aa3300&quot;</span>
+          /&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">ActivityIndicatorIOS</span>
+            <span class="hljs-attribute">size</span>=<span class="hljs-value">&quot;large&quot;</span>
+            <span class="hljs-attribute">color</span>=<span class="hljs-value">&quot;#00aa00&quot;</span>
+          /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+      )</span>;
+    }
+  },
+  {
+    title: <span class="hljs-string">&apos;Start/stop&apos;</span>,
+    render () {
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">ToggleAnimatingActivityIndicator</span> /&gt;</span>;</span>
+    }
+  },
+];
+
+<span class="hljs-keyword">const</span> styles = StyleSheet.create({
+  centering: {
+    alignItems: <span class="hljs-string">&apos;center&apos;</span>,
+    justifyContent: <span class="hljs-string">&apos;center&apos;</span>,
+  },
+  gray: {
+    backgroundColor: <span class="hljs-string">&apos;#cccccc&apos;</span>,
+  },
+  horizontal: {
+    flexDirection: <span class="hljs-string">&apos;row&apos;</span>,
+    justifyContent: <span class="hljs-string">&apos;space-around&apos;</span>,
+  },
+});
+</code></pre>
+<p>&#x8C03;&#x7528;</p>
+<pre><code class="lang-JavaScript">{
+  ActivityIndicatorIOSExample.map((item, index) =&gt; {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">key</span>=<span class="hljs-value">{index}</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{flex:</span> <span class="hljs-attribute">1</span>, <span class="hljs-attribute">marginBottom:</span> <span class="hljs-attribute">10</span>}}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>{item.title}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>{item.description}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{height:</span> <span class="hljs-attribute">30</span>}}&gt;</span>
+          {item.render()}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+    )</span>;
+  })
+}
+</code></pre>
+<h2 id="&#x4E2D;&#x82F1;&#x6587;&#x5B98;&#x65B9;&#x8BF4;&#x660E;">&#x4E2D;&#x82F1;&#x6587;&#x5B98;&#x65B9;&#x8BF4;&#x660E;</h2>
+<p><a href="http://reactnative.cn/docs/activityindicatorios.html#content" target="_blank">http://reactnative.cn/docs/activityindicatorios.html#content</a></p>
+<p><a href="https://facebook.github.io/react-native/docs/activityindicatorios.html#content" target="_blank">https://facebook.github.io/react-native/docs/activityindicatorios.html#content</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../components/DatePickerIOS.html" class="navigation navigation-prev " aria-label="Previous page: DatePickerIOS 时间日期组件"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../components/TabBarIOS.html" class="navigation navigation-next " aria-label="Next page: TabBarIOS 页面底部 TabBar"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

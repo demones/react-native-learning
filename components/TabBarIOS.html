@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>TabBarIOS 页面底部 TabBar | react native 学习笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../components/NavigatorIOS.html" />
+    
+    
+    <link rel="prev" href="../components/ActivityIndicatorIOS.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.4"
+        data-chapter-title="TabBarIOS 页面底部 TabBar"
+        data-filepath="components/TabBarIOS.md"
+        data-basepath=".."
+        data-revision="Fri Feb 19 2016 10:38:51 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="reference/index.html">
+            
+                
+                    <a href="../reference/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        相关参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="install/index.html">
+            
+                
+                    <a href="../install/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        安装与运行
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="publish/index.html">
+            
+                
+                    <a href="../publish/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        调试与发布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="layout/index.html">
+            
+                
+                    <a href="../layout/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        样式布局
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="layout/base.html">
+            
+                
+                    <a href="../layout/base.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        样式布局基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="layout/image.html">
+            
+                
+                    <a href="../layout/image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        图片 Image 组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="layout/text.html">
+            
+                
+                    <a href="../layout/text.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        文本 Text 组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="components/index.html">
+            
+                
+                    <a href="../components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        组件 Components
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="components/StatusBar.html">
+            
+                
+                    <a href="../components/StatusBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        StatusBar 手机顶部状态栏
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="components/DatePickerIOS.html">
+            
+                
+                    <a href="../components/DatePickerIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        DatePickerIOS 时间日期组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="components/ActivityIndicatorIOS.html">
+            
+                
+                    <a href="../components/ActivityIndicatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        ActivityIndicatorIOS 指示器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.4" data-path="components/TabBarIOS.html">
+            
+                
+                    <a href="../components/TabBarIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        TabBarIOS 页面底部 TabBar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="components/NavigatorIOS.html">
+            
+                
+                    <a href="../components/NavigatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        NavigatorIOS 导航页面组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="components/ScrollView.html">
+            
+                
+                    <a href="../components/ScrollView.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        ScrollView 滚动视图组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >react native 学习笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="tabbarios-&#x7EC4;&#x4EF6;--&#x9875;&#x9762;&#x5E95;&#x90E8;-tabbar">TabBarIOS &#x7EC4;&#x4EF6; - &#x9875;&#x9762;&#x5E95;&#x90E8; TabBar</h1>
+<p>&#x8BE5;&#x7EC4;&#x4EF6;&#x7528;&#x6765;&#x5728; IOS &#x9875;&#x9762;&#x5E95;&#x90E8;&#x663E;&#x793A; TabBar&#xFF0C;&#x8FD8;&#x5305;&#x62EC;&#x7EC4;&#x4EF6; TabBarIOS.Item</p>
+<h2 id="&#x4F8B;&#x5B50;&#x4EE3;&#x7801;">&#x4F8B;&#x5B50;&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-JavaScript"><span class="hljs-pi">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> React, {
+  Component,
+  StyleSheet,
+  TabBarIOS,
+  Text,
+  View,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">const</span> base64Icon = <span class="hljs-string">&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAQAAACSR7JhAAADtUlEQVR4Ac3YA2Bj6QLH0XPT1Fzbtm29tW3btm3bfLZtv7e2ObZnms7d8Uw098tuetPzrxv8wiISrtVudrG2JXQZ4VOv+qUfmqCGGl1mqLhoA52oZlb0mrjsnhKpgeUNEs91Z0pd1kvihA3ULGVHiQO2narKSHKkEMulm9VgUyE60s1aWoMQUbpZOWE+kaqs4eLEjdIlZTcFZB0ndc1+lhB1lZrIuk5P2aib1NBpZaL+JaOGIt0ls47SKzLC7CqrlGF6RZ09HGoNy1lYl2aRSWL5GuzqWU1KafRdoRp0iOQEiDzgZPnG6DbldcomadViflnl/cL93tOoVbsOLVM2jylvdWjXolWX1hmfZbGR/wjypDjFLSZIRov09BgYmtUqPQPlQrPapecLgTIy0jMgPKtTeob2zWtrGH3xvjUkPCtNg/tm1rjwrMa+mdUkPd3hWbH0jArPGiU9ufCsNNWFZ40wpwn+62/66R2RUtoso1OB34tnLOcy7YB1fUdc9e0q3yru8PGM773vXsuZ5YIZX+5xmHwHGVvlrGPN6ZSiP1smOsMMde40wKv2VmwPPVXNut4sVpUreZiLBHi0qln/VQeI/LTMYXpsJtFiclUN+5HVZazim+Ky+7sAvxWnvjXrJFneVtLWLyPJu9K3cXLWeOlbMTlrIelbMDlrLenrjEQOtIF+fuI9xRp9ZBFp6+b6WT8RrxEpdK64BuvHgDk+vUy+b5hYk6zfyfs051gRoNO1usU12WWRWL73/MMEy9pMi9qIrR4ZpV16Rrvduxazmy1FSvuFXRkqTnE7m2kdb5U8xGjLw/spRr1uTov4uOgQE+0N/DvFrG/Jt7i/FzwxbA9kDanhf2w+t4V97G8lrT7wc08aA2QNUkuTfW/KimT01wdlfK4yEw030VfT0RtZbzjeMprNq8m8tnSTASrTLti64oBNdpmMQm0eEwvfPwRbUBywG5TzjPCsdwk3IeAXjQblLCoXnDVeoAz6SfJNk5TTzytCNZk/POtTSV40NwOFWzw86wNJRpubpXsn60NJFlHeqlYRbslqZm2jnEZ3qcSKgm0kTli3zZVS7y/iivZTweYXJ26Y+RTbV1zh3hYkgyFGSTKPfRVbRqWWVReaxYeSLarYv1Qqsmh1s95S7G+eEWK0f3jYKTbV6bOwepjfhtafsvUsqrQvrGC8YhmnO9cSCk3yuY984F1vesdHYhWJ5FvASlacshUsajFt2mUM9pqzvKGcyNJW0arTKN1GGGzQlH0tXwLDgQTurS8eIQAAAABJRU5ErkJggg==&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TabBarExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  constructor(props, context) {
+    <span class="hljs-keyword">super</span>(props, context);
+    <span class="hljs-keyword">this</span>.state = {
+      selectedTab: <span class="hljs-string">&apos;redTab&apos;</span>,
+      notifCount: <span class="hljs-number">0</span>,
+      presses: <span class="hljs-number">0</span>,
+    };
+  }
+
+  _renderContent(color, pageText, num) {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{[styles.tabContent,</span> {<span class="hljs-attribute">backgroundColor:</span> <span class="hljs-attribute">color</span>}]}&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.tabText}</span>&gt;</span>{pageText}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.tabText}</span>&gt;</span>{num} re-renders of the {pageText}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+    )</span>;
+  }
+
+  render() {
+    <span class="hljs-comment">/*eslint-disable global-require*/</span>
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">TabBarIOS</span>
+        <span class="hljs-attribute">tintColor</span>=<span class="hljs-value">&quot;white&quot;</span>
+        <span class="hljs-attribute">barTintColor</span>=<span class="hljs-value">&quot;darkslateblue&quot;</span>
+        <span class="hljs-attribute">translucent</span>=<span class="hljs-value">{true}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">TabBarIOS.Item</span>
+          <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;Blue Tab&quot;</span>
+          <span class="hljs-attribute">icon</span>=<span class="hljs-value">{{uri:</span> <span class="hljs-attribute">base64Icon</span>, <span class="hljs-attribute">scale:</span> <span class="hljs-attribute">3</span>}}
+          <span class="hljs-attribute">selected</span>=<span class="hljs-value">{this.state.selectedTab</span> =<span class="hljs-value">==</span> &apos;<span class="hljs-attribute">blueTab</span>&apos;}
+          <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> {
+            this.setState({
+              selectedTab: &apos;blueTab&apos;,
+            });
+          }}&gt;
+          {this._renderContent(&apos;#414A8C&apos;, &apos;Blue Tab&apos;)}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">TabBarIOS.Item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">TabBarIOS.Item</span>
+          <span class="hljs-attribute">systemIcon</span>=<span class="hljs-value">&quot;history&quot;</span>
+          <span class="hljs-attribute">badge</span>=<span class="hljs-value">{this.state.notifCount</span> &gt;</span> 0 ? this.state.notifCount : undefined}
+          selected={this.state.selectedTab === &apos;redTab&apos;}
+          onPress={() =&gt; {
+            this.setState({
+              selectedTab: &apos;redTab&apos;,
+              notifCount: this.state.notifCount + 1,
+            });
+          }}&gt;
+          {this._renderContent(&apos;#783E33&apos;, &apos;Red Tab&apos;, this.state.notifCount)}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">TabBarIOS.Item</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">TabBarIOS.Item</span>
+          <span class="hljs-attribute">icon</span>=<span class="hljs-value">{require(&apos;..</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">flux.png</span>&apos;)}
+          <span class="hljs-attribute">title</span>=<span class="hljs-value">&quot;More&quot;</span>
+          <span class="hljs-attribute">selected</span>=<span class="hljs-value">{this.state.selectedTab</span> =<span class="hljs-value">==</span> &apos;<span class="hljs-attribute">greenTab</span>&apos;}
+          <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> {
+            this.setState({
+              selectedTab: &apos;greenTab&apos;,
+              presses: this.state.presses + 1
+            });
+          }}&gt;
+          {this._renderContent(&apos;#21551C&apos;, &apos;Green Tab&apos;, this.state.presses)}
+        <span class="hljs-tag">&lt;/<span class="hljs-title">TabBarIOS.Item</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">TabBarIOS</span>&gt;</span>
+    )</span>;
+  }
+
+}
+
+<span class="hljs-keyword">const</span> styles = StyleSheet.create({
+  tabContent: {
+    flex: <span class="hljs-number">1</span>,
+    alignItems: <span class="hljs-string">&apos;center&apos;</span>,
+  },
+  tabText: {
+    color: <span class="hljs-string">&apos;white&apos;</span>,
+    margin: <span class="hljs-number">50</span>,
+  },
+});
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> TabBarExample;
+</code></pre>
+<h2 id="&#x4E2D;&#x82F1;&#x6587;&#x5B98;&#x65B9;&#x8BF4;&#x660E;">&#x4E2D;&#x82F1;&#x6587;&#x5B98;&#x65B9;&#x8BF4;&#x660E;</h2>
+<p><a href="http://reactnative.cn/docs/tabbarios.html#content" target="_blank">http://reactnative.cn/docs/tabbarios.html#content</a></p>
+<p><a href="https://facebook.github.io/react-native/docs/tabbarios.html#content" target="_blank">https://facebook.github.io/react-native/docs/tabbarios.html#content</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../components/ActivityIndicatorIOS.html" class="navigation navigation-prev " aria-label="Previous page: ActivityIndicatorIOS 指示器"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../components/NavigatorIOS.html" class="navigation navigation-next " aria-label="Next page: NavigatorIOS 导航页面组件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
