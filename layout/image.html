@@ -1,0 +1,454 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>图片 Image 组件 | react native 学习笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../layout/text.html" />
+    
+    
+    <link rel="prev" href="../layout/base.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.2"
+        data-chapter-title="图片 Image 组件"
+        data-filepath="layout/image.md"
+        data-basepath=".."
+        data-revision="Fri Feb 19 2016 10:18:40 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="reference/index.html">
+            
+                
+                    <a href="../reference/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        相关参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="install/index.html">
+            
+                
+                    <a href="../install/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        安装与运行
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="publish/index.html">
+            
+                
+                    <a href="../publish/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        调试与发布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="layout/index.html">
+            
+                
+                    <a href="../layout/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        样式布局
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="layout/base.html">
+            
+                
+                    <a href="../layout/base.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        样式布局基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="layout/image.html">
+            
+                
+                    <a href="../layout/image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        图片 Image 组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="layout/text.html">
+            
+                
+                    <a href="../layout/text.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        文本 Text 组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="components/index.html">
+            
+                
+                    <a href="../components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        组件 Components
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="components/StatusBar.html">
+            
+                
+                    <a href="../components/StatusBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        StatusBar 手机顶部状态栏
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="components/DatePickerIOS.html">
+            
+                
+                    <a href="../components/DatePickerIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        DatePickerIOS 时间日期组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="components/ActivityIndicatorIOS.html">
+            
+                
+                    <a href="../components/ActivityIndicatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        ActivityIndicatorIOS 指示器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="components/TabBarIOS.html">
+            
+                
+                    <a href="../components/TabBarIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        TabBarIOS 页面底部 TabBar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="components/NavigatorIOS.html">
+            
+                
+                    <a href="../components/NavigatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        NavigatorIOS 导航页面组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="components/ScrollView.html">
+            
+                
+                    <a href="../components/ScrollView.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        ScrollView 滚动视图组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >react native 学习笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x56FE;&#x7247;-image-&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;">&#x56FE;&#x7247; Image &#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;</h1>
+<ul>
+<li>Image &#x7EC4;&#x4EF6;</li>
+<li>&#x5F15;&#x7528;&#x9759;&#x6001;&#x56FE;&#x7247;</li>
+<li>&#x5F15;&#x5165;&#x7F51;&#x7EDC;&#x56FE;&#x7247;</li>
+<li>ResizeMode</li>
+<li>&#x5D4C;&#x5957;Text</li>
+</ul>
+<p>Image &#x7EC4;&#x4EF6;&#x901A;&#x8FC7;source&#x6765;&#x6307;&#x5B9A;&#x8D44;&#x6E90;&#xFF0C;&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x662F;&#x672C;&#x5730;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7F51;&#x7EDC;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;Image &#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x793A;&#x4F8B;</p>
+<pre><code>  &lt;Image
+      style={styles.logo}
+      source={{uri: &apos;http://facebook.github.io/react/img/logo_og.png&apos;}}
+  /&gt;
+</code></pre><p><strong>&#x6CE8;&#x610F;&#x5199;&#x6CD5;</strong></p>
+<pre><code>// GOOD
+&lt;Image source={require(&apos;./my-icon.png&apos;)} /&gt;
+
+// BAD
+var icon = this.props.active ? &apos;my-icon-active&apos; : &apos;my-icon-inactive&apos;;
+&lt;Image source={require(&apos;./&apos; + icon + &apos;.png&apos;)} /&gt;
+
+// GOOD
+var icon = this.props.active ? require(&apos;./my-icon-active.png&apos;) : require(&apos;./my-icon-inactive.png&apos;);
+&lt;Image source={icon} /&gt;
+</code></pre><h2 id="&#x672C;&#x5730;&#x5F15;&#x5165;&#x56FE;&#x7247;&#x8D44;&#x6E90;">&#x672C;&#x5730;&#x5F15;&#x5165;&#x56FE;&#x7247;&#x8D44;&#x6E90;</h2>
+<p>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;React native 0.14 &#x4E2D;&#x5F15;&#x5165;&#x672C;&#x5730;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x4E0E;&#x4E4B;&#x524D;&#x7248;&#x672C;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x8BE6;&#x89C1;&#x5B98;&#x65B9;&#x8BF4;&#x660E;
+<a href="https://facebook.github.io/react-native/docs/images.html" target="_blank">https://facebook.github.io/react-native/docs/images.html</a></p>
+<pre><code>&lt;Image source={require(&apos;./images/logo.png&apos;)}/&gt;
+</code></pre><h2 id="&#x901A;&#x8FC7;-uri-&#x5F15;&#x5165;&#x5916;&#x90E8;&#x94FE;&#x63A5;">&#x901A;&#x8FC7; uri &#x5F15;&#x5165;&#x5916;&#x90E8;&#x94FE;&#x63A5;</h2>
+<pre><code>&lt;Image style={{width: 291, height: 291}}
+    source={{uri: &apos;http://facebook.github.io/react/img/logo_og.png&apos;}}
+  /&gt;
+</code></pre><p><strong>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x901A;&#x8FC7;&#x5916;&#x90E8;&#x5F15;&#x5165;&#x7684;&#x94FE;&#x63A5;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x5176;&#x9AD8;&#x5EA6;&#x548C;&#x5BBD;&#x5EA6;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x65E0;&#x6CD5;&#x663E;&#x793A;&#xFF0C;&#x800C;&#x5F15;&#x5165;&#x672C;&#x5730;&#x56FE;&#x7247;&#x4E0D;&#x9700;&#x8981;</strong></p>
+<h2 id="resizemode-&#x6A21;&#x5F0F;">resizeMode &#x6A21;&#x5F0F;</h2>
+<p>&#x901A;&#x8FC7;resizeMode &#x6539;&#x53D8;&#x56FE;&#x7247;&#x663E;&#x793A;&#x6548;&#x679C;&#xFF0C;&#x7C7B;&#x4F3C;css &#x7684;&#x80CC;&#x666F;&#x6A21;&#x5F0F;</p>
+<pre><code>resizeMode enum(&apos;cover&apos;, &apos;contain&apos;, &apos;stretch&apos;)
+</code></pre><p>&#x4EE5;&#x4E0B;&#x7ED9;&#x51FA;&#x4F8B;&#x5B50;</p>
+<pre><code>&lt;View style={{backgroundColor: &apos;black&apos;, marginBottom: 10}}&gt;
+  &lt;Image
+    source={require(&apos;./images/logo.png&apos;)}
+    style={{
+      height: 100,
+      resizeMode: &apos;cover&apos;
+    }}
+  /&gt;
+&lt;/View&gt;
+</code></pre><h2 id="&#x5728;-image-&#x4E2D;&#x5D4C;&#x5957;&#x5176;&#x4ED6;&#x5143;&#x7D20;">&#x5728; Image &#x4E2D;&#x5D4C;&#x5957;&#x5176;&#x4ED6;&#x5143;&#x7D20;</h2>
+<p>&#x4E0D;&#x540C;&#x4E8E;html&#x4E2D;&#x7684;Image&#x5143;&#x7D20;&#xFF0C;React Native &#x4E2D;&#x7684;Image&#x53EF;&#x5D4C;&#x5957;&#x5176;&#x4ED6;&#x5143;&#x7D20;</p>
+<pre><code>&lt;Image style={{
+        flex: 1,
+        height: 100,
+        justifyContent:&apos;center&apos;,
+        alignItems: &apos;center&apos;}}
+        source={{uri: &#x2018;&#x2026;&#x2019;}}&gt;
+       &lt;Text style={{color: &apos;red&apos;}}&gt;Image Description&lt;/Text&gt;
+   &lt;/Image&gt;
+</code></pre><p>&#x4F8B;&#x5B50;</p>
+<pre><code>&lt;Image
+  source={require(&apos;./images/logo.png&apos;)}
+  style={{
+    height: 100,
+    resizeMode: &apos;cover&apos;,
+    alignItems: &apos;center&apos;, justifyContent: &apos;center&apos;
+  }}
+&gt;
+  &lt;Text style={{color: &apos;red&apos;}}&gt;Hello World&lt;/Text&gt;
+&lt;/Image&gt;
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../layout/base.html" class="navigation navigation-prev " aria-label="Previous page: 样式布局基础"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../layout/text.html" class="navigation navigation-next " aria-label="Next page: 文本 Text 组件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

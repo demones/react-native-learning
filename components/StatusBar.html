@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>StatusBar 手机顶部状态栏 | react native 学习笔记</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../components/DatePickerIOS.html" />
+    
+    
+    <link rel="prev" href="../components/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.1"
+        data-chapter-title="StatusBar 手机顶部状态栏"
+        data-filepath="components/StatusBar.md"
+        data-basepath=".."
+        data-revision="Fri Feb 19 2016 10:18:40 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="reference/index.html">
+            
+                
+                    <a href="../reference/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        相关参考
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="install/index.html">
+            
+                
+                    <a href="../install/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        安装与运行
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="publish/index.html">
+            
+                
+                    <a href="../publish/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        调试与发布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="layout/index.html">
+            
+                
+                    <a href="../layout/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        样式布局
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="layout/base.html">
+            
+                
+                    <a href="../layout/base.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        样式布局基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="layout/image.html">
+            
+                
+                    <a href="../layout/image.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        图片 Image 组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="layout/text.html">
+            
+                
+                    <a href="../layout/text.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        文本 Text 组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="components/index.html">
+            
+                
+                    <a href="../components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        组件 Components
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="components/StatusBar.html">
+            
+                
+                    <a href="../components/StatusBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        StatusBar 手机顶部状态栏
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="components/DatePickerIOS.html">
+            
+                
+                    <a href="../components/DatePickerIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        DatePickerIOS 时间日期组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="components/ActivityIndicatorIOS.html">
+            
+                
+                    <a href="../components/ActivityIndicatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        ActivityIndicatorIOS 指示器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="components/TabBarIOS.html">
+            
+                
+                    <a href="../components/TabBarIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        TabBarIOS 页面底部 TabBar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="components/NavigatorIOS.html">
+            
+                
+                    <a href="../components/NavigatorIOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        NavigatorIOS 导航页面组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="components/ScrollView.html">
+            
+                
+                    <a href="../components/ScrollView.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        ScrollView 滚动视图组件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >react native 学习笔记</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="statusbar-&#x7EC4;&#x4EF6;--&#x624B;&#x673A;&#x9876;&#x90E8;&#x72B6;&#x6001;&#x680F;">StatusBar &#x7EC4;&#x4EF6; - &#x624B;&#x673A;&#x9876;&#x90E8;&#x72B6;&#x6001;&#x680F;</h1>
+<h2 id="&#x4F8B;&#x5B50;&#x4EE3;&#x7801;">&#x4F8B;&#x5B50;&#x4EE3;&#x7801;</h2>
+<pre><code class="lang-JavaScript"><span class="hljs-pi">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> React, {
+  Component,
+  StyleSheet,
+  View,
+  Text,
+  TouchableHighlight,
+  StatusBar,
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-native&apos;</span>;
+
+<span class="hljs-keyword">const</span> colors = [
+  <span class="hljs-string">&apos;#ff0000&apos;</span>,
+  <span class="hljs-string">&apos;#00ff00&apos;</span>,
+  <span class="hljs-string">&apos;#0000ff&apos;</span>,
+];
+
+<span class="hljs-keyword">const</span> barStyles = [
+  <span class="hljs-string">&apos;default&apos;</span>,
+  <span class="hljs-string">&apos;light-content&apos;</span>,
+];
+
+<span class="hljs-keyword">const</span> showHideTransitions = [
+  <span class="hljs-string">&apos;fade&apos;</span>,
+  <span class="hljs-string">&apos;slide&apos;</span>,
+];
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StatusBarExample</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  constructor(props, context) {
+    <span class="hljs-keyword">super</span>(props, context);
+    <span class="hljs-keyword">this</span>.state = {
+      animated: <span class="hljs-literal">true</span>,
+      backgroundColor: <span class="hljs-keyword">this</span>._getValue(colors, <span class="hljs-number">0</span>),
+      hidden: <span class="hljs-literal">false</span>,
+      showHideTransition: <span class="hljs-keyword">this</span>._getValue(showHideTransitions, <span class="hljs-number">0</span>),
+      translucent: <span class="hljs-literal">true</span>,
+      barStyle: <span class="hljs-string">&apos;default&apos;</span>,
+      networkActivityIndicatorVisible: <span class="hljs-literal">false</span>
+    };
+
+    <span class="hljs-keyword">this</span>._colorIndex = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>._barStyleIndex = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">this</span>._showHideTransitionIndex = <span class="hljs-number">0</span>;
+  }
+
+  _getValue(array, index) {
+    <span class="hljs-keyword">return</span> array[index % array.length];
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">StatusBar</span>
+          <span class="hljs-attribute">backgroundColor</span>=<span class="hljs-value">{this.state.backgroundColor}</span>
+          <span class="hljs-attribute">translucent</span>=<span class="hljs-value">{this.state.translucent}</span>
+          <span class="hljs-attribute">hidden</span>=<span class="hljs-value">{this.state.hidden}</span>
+          <span class="hljs-attribute">showHideTransition</span>=<span class="hljs-value">{this.state.showHideTransition}</span>
+          <span class="hljs-attribute">animated</span>=<span class="hljs-value">{this.state.animated}</span>
+          <span class="hljs-attribute">barStyle</span>=<span class="hljs-value">{this.state.barStyle}</span>
+          <span class="hljs-attribute">networkActivityIndicatorVisible</span>=<span class="hljs-value">{this.state.networkActivityIndicatorVisible}</span>
+        /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> this.setState({animated: !this.state.animated})}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>animated: {this.state.animated ? &apos;true&apos; : &apos;false&apos;}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> this.setState({hidden: !this.state.hidden})}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>hidden: {this.state.hidden ? &apos;true&apos; : &apos;false&apos;}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.title}</span>&gt;</span>iOS<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> {
+              this._barStyleIndex++;
+              this.setState({barStyle: this._getValue(barStyles, this._barStyleIndex)});
+            }}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>style: &apos;{this._getValue(barStyles, this._barStyleIndex)}&apos;<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> this.setState({
+              networkActivityIndicatorVisible: !this.state.networkActivityIndicatorVisible,
+            })}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>
+                networkActivityIndicatorVisible:
+                {this.state.networkActivityIndicatorVisible ? &apos;true&apos; : &apos;false&apos;}
+              <span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> {
+              this._showHideTransitionIndex++;
+              this.setState({
+                showHideTransition:
+                this._getValue(showHideTransitions, this._showHideTransitionIndex),
+              });
+            }}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>
+                showHideTransition:
+                &apos;{this._getValue(showHideTransitions, this._showHideTransitionIndex)}&apos;
+              <span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Text</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.title}</span>&gt;</span>Android<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> {
+              this._colorIndex++;
+              this.setState({backgroundColor: this._getValue(colors, this._colorIndex)});
+            }}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>backgroundColor: &apos;{this._getValue(colors, this._colorIndex)}&apos;<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">TouchableHighlight</span>
+            <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.wrapper}</span>
+            <span class="hljs-attribute">onPress</span>=<span class="hljs-value">{()</span> =&gt;</span> {
+              this.setState({
+                translucent: !this.state.translucent,
+                backgroundColor: !this.state.translucent ? &apos;rgba(0, 0, 0, 0.4)&apos; : &apos;black&apos;,
+              });
+            }}&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-title">View</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{styles.button}</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">Text</span>&gt;</span>translucent: {this.state.translucent ? &apos;true&apos; : &apos;false&apos;}<span class="hljs-tag">&lt;/<span class="hljs-title">Text</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">TouchableHighlight</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">View</span>&gt;</span>
+    )</span>;
+  }
+}
+
+<span class="hljs-keyword">const</span> styles = StyleSheet.create({
+  wrapper: {
+    borderRadius: <span class="hljs-number">5</span>,
+    marginBottom: <span class="hljs-number">5</span>,
+  },
+  button: {
+    borderRadius: <span class="hljs-number">5</span>,
+    backgroundColor: <span class="hljs-string">&apos;#eeeeee&apos;</span>,
+    padding: <span class="hljs-number">10</span>,
+  },
+  title: {
+    marginTop: <span class="hljs-number">16</span>,
+    marginBottom: <span class="hljs-number">8</span>,
+    fontWeight: <span class="hljs-string">&apos;bold&apos;</span>,
+  }
+});
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> StatusBarExample;
+</code></pre>
+<p>&#x5728;&#x9700;&#x8981;&#x7684;&#x5730;&#x65B9;&#x5F15;&#x5165;&#x8BE5;&#x4F8B;&#x5B50;&#x7EC4;&#x4EF6;&#x5373;&#x53EF;</p>
+<h2 id="&#x4E2D;&#x82F1;&#x6587;&#x5B98;&#x65B9;&#x8BF4;&#x660E;">&#x4E2D;&#x82F1;&#x6587;&#x5B98;&#x65B9;&#x8BF4;&#x660E;</h2>
+<p><a href="http://reactnative.cn/docs/statusbar.html#content" target="_blank">http://reactnative.cn/docs/statusbar.html#content</a></p>
+<p><a href="http://facebook.github.io/react-native/docs/statusbar.html#content" target="_blank">http://facebook.github.io/react-native/docs/statusbar.html#content</a></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../components/index.html" class="navigation navigation-prev " aria-label="Previous page: 组件 Components"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../components/DatePickerIOS.html" class="navigation navigation-next " aria-label="Next page: DatePickerIOS 时间日期组件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
